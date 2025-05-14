@@ -1,0 +1,21 @@
+/* カレンダーの表示方法を管理するファイル */
+
+/* 1時間のセルの高さを小さく */
+.fc-timegrid-slot {
+    height: 20px !important; /* デフォルト約60px → 小さくする */
+    min-height:0px !important;
+    line-height: 1 !important;
+    
+  }
+  
+  
+  /* 土曜の背景を薄いグレーに*/
+.fc-day-sat {
+  background-color: #f0f0f0 !important;
+}
+
+/* 日曜の背景を薄いグレーに */
+ .fc-day-sun {
+  background-color: #f0f0f0 !important;
+}  
+
