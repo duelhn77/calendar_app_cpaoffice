@@ -1,0 +1,3 @@
+{
+  "/api/getUserPermissions/route": "app/api/getUserPermissions/route.js"
+}

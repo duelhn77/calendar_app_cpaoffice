@@ -1,0 +1,16 @@
+/* [project]/src/styles/calendar.css [app-client] (css) */
+.fc-timegrid-slot {
+  height: 20px !important;
+  min-height: 0 !important;
+  line-height: 1 !important;
+}
+
+.fc-day-sat {
+  background-color: #f0f0f0 !important;
+}
+
+.fc-day-sun {
+  background-color: #f0f0f0 !important;
+}
+
+/*# sourceMappingURL=src_styles_calendar_b52d8e88.css.map*/

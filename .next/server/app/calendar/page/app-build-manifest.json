@@ -1,0 +1,29 @@
+{
+  "pages": {
+    "/calendar/page": [
+      "static/chunks/node_modules_next_dist_1a6ee436._.js",
+      "static/chunks/src_app_favicon_ico_mjs_7c387cfb._.js",
+      "static/chunks/[root of the server]__b07dbc43._.css",
+      "static/chunks/src_app_layout_tsx_aaf7d535._.js",
+      "static/chunks/src_94a4d9fe._.js",
+      "static/chunks/node_modules_@fullcalendar_core_dc86669e._.js",
+      "static/chunks/node_modules_@fullcalendar_interaction_index_f0c952fd.js",
+      "static/chunks/node_modules_react-select_dist_aeaafd1c._.js",
+      "static/chunks/node_modules_react-icons_fa_index_esm_cf819b17.js",
+      "static/chunks/node_modules_react-icons_lib_esm_44027767._.js",
+      "static/chunks/node_modules_lodash_20634561._.js",
+      "static/chunks/node_modules_recharts_es6_f20eecd1._.js",
+      "static/chunks/node_modules_3b942743._.js",
+      "static/chunks/src_styles_calendar_f418e455.css",
+      "static/chunks/src_app_calendar_page_tsx_e0cd2d77._.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_fff34f97._.js",
+      "static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc06._.js",
+      "static/chunks/node_modules_next_dist_compiled_38d265cf._.js",
+      "static/chunks/node_modules_next_dist_client_c24f7707._.js",
+      "static/chunks/node_modules_next_dist_3bfaed20._.js",
+      "static/chunks/node_modules_@swc_helpers_cjs_00636ac3._.js",
+      "static/chunks/_e69f0d32._.js",
+      "static/chunks/_a2b209e9._.js"
+    ]
+  }
+}

@@ -100,6 +100,7 @@ export default function Sidebar({ onSelectView }: SidebarProps) {
 
   return (
     <div className="sidebar">
+      <h1 className="sidebar-title">成田公認会計士事務所</h1>
       <h1 className="sidebar-title">執務管理システム</h1>
       <ul>
       <li className="report-item" onClick={() => onSelectView("calendar")}>
