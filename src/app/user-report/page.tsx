@@ -65,7 +65,36 @@ export default function UserReportPage() {
       })
     : [];
 
-  fatal: not a git repository (or any of the parent directories): .git
+  const groupedData = viewMode === "month"
+  ? Object.values(
+      filteredData.reduce((acc, row) => {
+        const key = `${row.userName}_${row.engagement}_${row.month}`;
+        if (!acc[key]) {
+          acc[key] = { ...row, activity: row.month || "", budget: 0, actual: 0 };
+        }
+        acc[key].budget += row.budget;
+        acc[key].actual += row.actual;
+        return acc;
+      }, {} as { [key: string]: ReportRow })
+    ).sort((a, b) => {
+      const dateA = new Date(a.month || "1900-01");
+      const dateB = new Date(b.month || "1900-01");
+      return dateA.getTime() - dateB.getTime();
+    })
+  : Object.values(
+      filteredData.reduce((acc, row) => {
+        const key = `${row.userName}_${row.engagement}_${row.activityId}_${row.activity}`;
+        if (!acc[key]) {
+          acc[key] = { ...row, budget: 0, actual: 0 };
+        }
+        acc[key].budget += row.budget;
+        acc[key].actual += row.actual;
+        return acc;
+      }, {} as { [key: string]: ReportRow })
+    ).sort((a, b) =>
+      (a.activityId || "").localeCompare(b.activityId || "", "ja", { numeric: true })
+    );
+
 
   const totalActual = groupedData.reduce((sum, row) => sum + row.actual, 0);
 
