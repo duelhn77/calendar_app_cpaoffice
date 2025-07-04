@@ -65,29 +65,7 @@ export default function UserReportPage() {
       })
     : [];
 
-  const groupedData = viewMode === "month"
-    ? Object.values(
-        filteredData.reduce((acc, row) => {
-          const key = `${row.userName}_${row.engagement}_${row.month}`;
-          if (!acc[key]) {
-            acc[key] = { ...row, activity: row.month || "", budget: 0, actual: 0 };
-          }
-          acc[key].budget += row.budget;
-          acc[key].actual += row.actual;
-          return acc;
-        }, {} as { [key: string]: ReportRow })
-      )
-    : Object.values(
-        filteredData.reduce((acc, row) => {
-          const key = `${row.userName}_${row.engagement}_${row.activityId}_${row.activity}`;
-          if (!acc[key]) {
-            acc[key] = { ...row, budget: 0, actual: 0 };
-          }
-          acc[key].budget += row.budget;
-          acc[key].actual += row.actual;
-          return acc;
-        }, {} as { [key: string]: ReportRow })
-      ).sort((a, b) => (a.activityId || "").localeCompare(b.activityId || "", "ja", { numeric: true }));
+  fatal: not a git repository (or any of the parent directories): .git
 
   const totalActual = groupedData.reduce((sum, row) => sum + row.actual, 0);
 
