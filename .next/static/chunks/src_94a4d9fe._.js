@@ -649,7 +649,7 @@ __turbopack_context__.s({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-icons/fa/index.esm.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-icons/fa/index.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ExportModal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ExportModal.tsx [app-client] (ecmascript)");
 ;
@@ -926,7 +926,7 @@ function Sidebar({ onSelectView }) {
                 onClick: ()=>setIsMenuOpen(!isMenuOpen),
                 ref: menuRef,
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaCog"], {
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaCog"], {
                         size: 20
                     }, void 0, false, {
                         fileName: "[project]/src/components/Sidebar.tsx",
@@ -1009,8 +1009,11 @@ var _s = __turbopack_context__.k.signature();
 function BudgetReportPage() {
     _s();
     const [reportData, setReportData] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
-    const [selectedEngagement, setSelectedEngagement] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const [activityMaster, setActivityMaster] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
     const [engagements, setEngagements] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [selectedEngagement, setSelectedEngagement] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const [startMonth, setStartMonth] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const [endMonth, setEndMonth] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "BudgetReportPage.useEffect": ()=>{
             const fetchReportData = {
@@ -1020,6 +1023,25 @@ function BudgetReportPage() {
                     setReportData(data);
                 }
             }["BudgetReportPage.useEffect.fetchReportData"];
+            const fetchActivities = {
+                "BudgetReportPage.useEffect.fetchActivities": async ()=>{
+                    try {
+                        const res = await fetch("/api/fetchActivities");
+                        const raw = await res.json();
+                        const mapped = raw.map({
+                            "BudgetReportPage.useEffect.fetchActivities.mapped": (row)=>({
+                                    engagement: row.engagement,
+                                    activityId: row.activity_id,
+                                    activity: row.activity,
+                                    budget: row.budget || 0
+                                })
+                        }["BudgetReportPage.useEffect.fetchActivities.mapped"]);
+                        setActivityMaster(mapped);
+                    } catch (err) {
+                        console.error("❌ fetchActivities エラー:", err);
+                    }
+                }
+            }["BudgetReportPage.useEffect.fetchActivities"];
             const fetchEngagements = {
                 "BudgetReportPage.useEffect.fetchEngagements": async ()=>{
                     const userId = localStorage.getItem("userId");
@@ -1031,36 +1053,47 @@ function BudgetReportPage() {
                             "BudgetReportPage.useEffect.fetchEngagements.names": (e)=>e.name
                         }["BudgetReportPage.useEffect.fetchEngagements.names"]);
                         setEngagements(names);
-                    // if (names.length > 0) {
-                    //   setSelectedEngagement(names[0]);
-                    // }
                     } catch (error) {
                         console.error("❌ fetchEngagements エラー:", error);
                     }
                 }
             }["BudgetReportPage.useEffect.fetchEngagements"];
             fetchReportData();
+            fetchActivities();
             fetchEngagements();
         }
     }["BudgetReportPage.useEffect"], []);
-    // ✅ Activityごとに一意にまとめる（予算時間は重複集計しない）
+    const allMonths = Array.from(new Set(reportData.filter((r)=>r.engagement === selectedEngagement && r.actual > 0).map((r)=>r.month))).sort((a, b)=>new Date(a).getTime() - new Date(b).getTime());
+    const filteredReportData = reportData.filter((row)=>{
+        if (row.engagement !== selectedEngagement) return false;
+        const time = new Date(row.month || "").getTime();
+        const from = startMonth ? new Date(startMonth).getTime() : -Infinity;
+        const to = endMonth ? new Date(endMonth).getTime() : Infinity;
+        return time >= from && time <= to;
+    });
     const activityMap = {};
-    reportData.forEach((row)=>{
+    // マスタベースで初期化（予算は1回だけセット）
+    activityMaster.forEach((row)=>{
         if (row.engagement !== selectedEngagement) return;
-        const key = row.activityId + "_" + row.activity;
-        if (!activityMap[key]) {
-            activityMap[key] = {
-                ...row
-            };
-        } else {
-            activityMap[key].actual += row.actual; // 実績は加算
+        const key = `${row.activityId}_${row.activity}`;
+        activityMap[key] = {
+            engagement: row.engagement,
+            activityId: row.activityId,
+            activity: row.activity,
+            budget: row.budget || 0,
+            actual: 0
+        };
+    });
+    // 実績データを加算（予算は加算しない）
+    filteredReportData.forEach((row)=>{
+        const key = `${row.activityId}_${row.activity}`;
+        if (activityMap[key]) {
+            activityMap[key].actual += row.actual || 0;
         }
     });
-    const filteredData = Object.values(activityMap).sort((a, b)=>{
-        return a.activityId.localeCompare(b.activityId, "ja", {
+    const filteredData = Object.values(activityMap).sort((a, b)=>a.activityId.localeCompare(b.activityId, "ja", {
             numeric: true
-        });
-    });
+        }));
     const totalBudget = filteredData.reduce((sum, row)=>sum + row.budget, 0);
     const totalActual = filteredData.reduce((sum, row)=>sum + row.actual, 0);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1071,63 +1104,160 @@ function BudgetReportPage() {
                 children: "📊 予実レポート"
             }, void 0, false, {
                 fileName: "[project]/src/app/budget-report/page.tsx",
-                lineNumber: 70,
+                lineNumber: 126,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "mb-6",
+                className: "grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mb-8",
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                        className: "mr-3 font-semibold text-gray-700",
-                        style: {
-                            fontSize: "20px"
-                        },
-                        children: "Engagement（会社）を選択："
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/budget-report/page.tsx",
-                        lineNumber: 73,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
-                        value: selectedEngagement,
-                        onChange: (e)=>setSelectedEngagement(e.target.value),
-                        className: "border px-3 py-2 rounded-md shadow-sm",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                value: "",
-                                children: "-- 選択してください --"
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                className: "block mb-2 font-semibold",
+                                style: {
+                                    fontSize: "18px"
+                                },
+                                children: "Engagement（会社）："
                             }, void 0, false, {
                                 fileName: "[project]/src/app/budget-report/page.tsx",
-                                lineNumber: 84,
+                                lineNumber: 130,
                                 columnNumber: 11
                             }, this),
-                            engagements.map((eng)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                    value: eng,
-                                    children: eng
-                                }, eng, false, {
-                                    fileName: "[project]/src/app/budget-report/page.tsx",
-                                    lineNumber: 86,
-                                    columnNumber: 13
-                                }, this))
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
+                                value: selectedEngagement,
+                                onChange: (e)=>setSelectedEngagement(e.target.value),
+                                className: "border p-2 rounded w-full",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                        value: "",
+                                        children: "-- 選択してください --"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/budget-report/page.tsx",
+                                        lineNumber: 136,
+                                        columnNumber: 13
+                                    }, this),
+                                    engagements.map((e)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                            value: e,
+                                            children: e
+                                        }, e, false, {
+                                            fileName: "[project]/src/app/budget-report/page.tsx",
+                                            lineNumber: 138,
+                                            columnNumber: 15
+                                        }, this))
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/budget-report/page.tsx",
+                                lineNumber: 131,
+                                columnNumber: 11
+                            }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/budget-report/page.tsx",
-                        lineNumber: 79,
+                        lineNumber: 129,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                className: "block mb-2 font-semibold",
+                                style: {
+                                    fontSize: "18px"
+                                },
+                                children: "開始月："
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/budget-report/page.tsx",
+                                lineNumber: 144,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
+                                value: startMonth,
+                                onChange: (e)=>setStartMonth(e.target.value),
+                                className: "border p-2 rounded w-full",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                        value: "",
+                                        children: "-- 指定なし --"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/budget-report/page.tsx",
+                                        lineNumber: 150,
+                                        columnNumber: 13
+                                    }, this),
+                                    allMonths.map((m)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                            value: m,
+                                            children: m
+                                        }, m, false, {
+                                            fileName: "[project]/src/app/budget-report/page.tsx",
+                                            lineNumber: 152,
+                                            columnNumber: 15
+                                        }, this))
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/budget-report/page.tsx",
+                                lineNumber: 145,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/budget-report/page.tsx",
+                        lineNumber: 143,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                className: "block mb-2 font-semibold",
+                                style: {
+                                    fontSize: "18px"
+                                },
+                                children: "終了月："
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/budget-report/page.tsx",
+                                lineNumber: 158,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
+                                value: endMonth,
+                                onChange: (e)=>setEndMonth(e.target.value),
+                                className: "border p-2 rounded w-full",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                        value: "",
+                                        children: "-- 指定なし --"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/budget-report/page.tsx",
+                                        lineNumber: 164,
+                                        columnNumber: 13
+                                    }, this),
+                                    allMonths.map((m)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                            value: m,
+                                            children: m
+                                        }, m, false, {
+                                            fileName: "[project]/src/app/budget-report/page.tsx",
+                                            lineNumber: 166,
+                                            columnNumber: 15
+                                        }, this))
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/budget-report/page.tsx",
+                                lineNumber: 159,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/budget-report/page.tsx",
+                        lineNumber: 157,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/budget-report/page.tsx",
-                lineNumber: 72,
+                lineNumber: 128,
                 columnNumber: 7
             }, this),
             selectedEngagement && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                         className: "text-xl font-semibold mb-3",
-                        style: {
-                            marginTop: "35px"
-                        },
                         children: [
                             "「",
                             selectedEngagement,
@@ -1135,7 +1265,7 @@ function BudgetReportPage() {
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/budget-report/page.tsx",
-                        lineNumber: 95,
+                        lineNumber: 174,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1160,7 +1290,7 @@ function BudgetReportPage() {
                                                 children: "Activity ID"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/budget-report/page.tsx",
-                                                lineNumber: 109,
+                                                lineNumber: 180,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -1171,51 +1301,54 @@ function BudgetReportPage() {
                                                 children: "Activity"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/budget-report/page.tsx",
-                                                lineNumber: 110,
+                                                lineNumber: 181,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                                 className: "border px-4 py-2",
                                                 style: {
-                                                    textAlign: "right"
+                                                    textAlign: "right",
+                                                    width: "120px"
                                                 },
                                                 children: "予定時間"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/budget-report/page.tsx",
-                                                lineNumber: 111,
+                                                lineNumber: 182,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                                 className: "border px-4 py-2",
                                                 style: {
-                                                    textAlign: "right"
+                                                    textAlign: "right",
+                                                    width: "120px"
                                                 },
                                                 children: "実績時間"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/budget-report/page.tsx",
-                                                lineNumber: 112,
+                                                lineNumber: 183,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                                 className: "border px-4 py-2",
                                                 style: {
-                                                    textAlign: "right"
+                                                    textAlign: "right",
+                                                    width: "120px"
                                                 },
                                                 children: "差分"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/budget-report/page.tsx",
-                                                lineNumber: 113,
+                                                lineNumber: 184,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/budget-report/page.tsx",
-                                        lineNumber: 108,
+                                        lineNumber: 179,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/budget-report/page.tsx",
-                                    lineNumber: 100,
+                                    lineNumber: 178,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
@@ -1229,7 +1362,7 @@ function BudgetReportPage() {
                                                         children: row.activityId
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/budget-report/page.tsx",
-                                                        lineNumber: 121,
+                                                        lineNumber: 192,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1237,14 +1370,14 @@ function BudgetReportPage() {
                                                         children: row.activity
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/budget-report/page.tsx",
-                                                        lineNumber: 122,
+                                                        lineNumber: 193,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                         className: "border px-4 py-2",
                                                         style: {
-                                                            width: "120px",
-                                                            textAlign: "right"
+                                                            textAlign: "right",
+                                                            width: "120px"
                                                         },
                                                         children: [
                                                             row.budget.toFixed(2),
@@ -1252,14 +1385,14 @@ function BudgetReportPage() {
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/budget-report/page.tsx",
-                                                        lineNumber: 123,
+                                                        lineNumber: 194,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                         className: "border px-4 py-2",
                                                         style: {
-                                                            width: "120px",
-                                                            textAlign: "right"
+                                                            textAlign: "right",
+                                                            width: "120px"
                                                         },
                                                         children: [
                                                             row.actual.toFixed(2),
@@ -1267,13 +1400,12 @@ function BudgetReportPage() {
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/budget-report/page.tsx",
-                                                        lineNumber: 124,
+                                                        lineNumber: 195,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                         className: "border px-4 py-2 font-bold",
                                                         style: {
-                                                            width: "120px",
                                                             textAlign: "right",
                                                             color: diff > 0 ? "red" : diff < 0 ? "green" : "black"
                                                         },
@@ -1283,13 +1415,13 @@ function BudgetReportPage() {
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/budget-report/page.tsx",
-                                                        lineNumber: 125,
+                                                        lineNumber: 196,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, idx, true, {
                                                 fileName: "[project]/src/app/budget-report/page.tsx",
-                                                lineNumber: 120,
+                                                lineNumber: 191,
                                                 columnNumber: 21
                                             }, this);
                                         }),
@@ -1298,7 +1430,6 @@ function BudgetReportPage() {
                                             style: {
                                                 borderTop: "2px solid black",
                                                 borderBottom: "2px solid black",
-                                                fontWeight: "bold",
                                                 backgroundColor: "#aed4f6"
                                             },
                                             children: [
@@ -1306,7 +1437,7 @@ function BudgetReportPage() {
                                                     className: "border px-4 py-2"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/budget-report/page.tsx",
-                                                    lineNumber: 147,
+                                                    lineNumber: 210,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1314,13 +1445,14 @@ function BudgetReportPage() {
                                                     children: "合計"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/budget-report/page.tsx",
-                                                    lineNumber: 148,
+                                                    lineNumber: 211,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                     className: "border px-4 py-2",
                                                     style: {
-                                                        textAlign: "right"
+                                                        textAlign: "right",
+                                                        width: "120px"
                                                     },
                                                     children: [
                                                         totalBudget.toFixed(2),
@@ -1328,13 +1460,14 @@ function BudgetReportPage() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/budget-report/page.tsx",
-                                                    lineNumber: 149,
+                                                    lineNumber: 212,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                     className: "border px-4 py-2",
                                                     style: {
-                                                        textAlign: "right"
+                                                        textAlign: "right",
+                                                        width: "120px"
                                                     },
                                                     children: [
                                                         totalActual.toFixed(2),
@@ -1342,7 +1475,7 @@ function BudgetReportPage() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/budget-report/page.tsx",
-                                                    lineNumber: 150,
+                                                    lineNumber: 213,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1357,30 +1490,30 @@ function BudgetReportPage() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/budget-report/page.tsx",
-                                                    lineNumber: 151,
+                                                    lineNumber: 214,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/budget-report/page.tsx",
-                                            lineNumber: 140,
+                                            lineNumber: 209,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/budget-report/page.tsx",
-                                    lineNumber: 116,
+                                    lineNumber: 187,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/budget-report/page.tsx",
-                            lineNumber: 99,
+                            lineNumber: 177,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/budget-report/page.tsx",
-                        lineNumber: 98,
+                        lineNumber: 176,
                         columnNumber: 11
                     }, this)
                 ]
@@ -1388,11 +1521,11 @@ function BudgetReportPage() {
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/budget-report/page.tsx",
-        lineNumber: 69,
+        lineNumber: 125,
         columnNumber: 5
     }, this);
 }
-_s(BudgetReportPage, "+KCLs1w15mBfC7X550P4bXYKjus=");
+_s(BudgetReportPage, "haein/6MHSIHFXtBb2Mt3RX+HKA=");
 _c = BudgetReportPage;
 var _c;
 __turbopack_context__.k.register(_c, "BudgetReportPage");
@@ -1471,7 +1604,11 @@ function UserReportPage() {
         acc[key].budget += row.budget;
         acc[key].actual += row.actual;
         return acc;
-    }, {})) : Object.values(filteredData.reduce((acc, row)=>{
+    }, {})).sort((a, b)=>{
+        const dateA = new Date(a.month || "1900-01");
+        const dateB = new Date(b.month || "1900-01");
+        return dateA.getTime() - dateB.getTime();
+    }) : Object.values(filteredData.reduce((acc, row)=>{
         const key = `${row.userName}_${row.engagement}_${row.activityId}_${row.activity}`;
         if (!acc[key]) {
             acc[key] = {
@@ -1495,7 +1632,7 @@ function UserReportPage() {
                 children: "👤 ユーザー別実績レポート"
             }, void 0, false, {
                 fileName: "[project]/src/app/user-report/page.tsx",
-                lineNumber: 96,
+                lineNumber: 103,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1509,57 +1646,10 @@ function UserReportPage() {
                                 style: {
                                     fontSize: "20px"
                                 },
-                                children: "表示モード："
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/user-report/page.tsx",
-                                lineNumber: 100,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
-                                value: viewMode,
-                                onChange: (e)=>setViewMode(e.target.value),
-                                className: "border px-3 py-2 rounded-md shadow-sm",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                        value: "activity",
-                                        children: "アクティビティ別"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/user-report/page.tsx",
-                                        lineNumber: 106,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                        value: "month",
-                                        children: "月別"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/user-report/page.tsx",
-                                        lineNumber: 107,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/app/user-report/page.tsx",
-                                lineNumber: 101,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/app/user-report/page.tsx",
-                        lineNumber: 99,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex flex-col",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                className: "mb-2 font-semibold",
-                                style: {
-                                    fontSize: "20px"
-                                },
                                 children: "Engagement（会社）を選択："
                             }, void 0, false, {
                                 fileName: "[project]/src/app/user-report/page.tsx",
-                                lineNumber: 112,
+                                lineNumber: 109,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -1575,7 +1665,7 @@ function UserReportPage() {
                                         children: "-- 選択してください --"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/user-report/page.tsx",
-                                        lineNumber: 121,
+                                        lineNumber: 118,
                                         columnNumber: 13
                                     }, this),
                                     engagements.map((e)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -1583,19 +1673,19 @@ function UserReportPage() {
                                             children: e
                                         }, e, false, {
                                             fileName: "[project]/src/app/user-report/page.tsx",
-                                            lineNumber: 123,
+                                            lineNumber: 120,
                                             columnNumber: 15
                                         }, this))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/user-report/page.tsx",
-                                lineNumber: 113,
+                                lineNumber: 110,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/user-report/page.tsx",
-                        lineNumber: 111,
+                        lineNumber: 108,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1609,7 +1699,7 @@ function UserReportPage() {
                                 children: "Userを選択："
                             }, void 0, false, {
                                 fileName: "[project]/src/app/user-report/page.tsx",
-                                lineNumber: 129,
+                                lineNumber: 126,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -1622,7 +1712,7 @@ function UserReportPage() {
                                         children: "-- 選択してください --"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/user-report/page.tsx",
-                                        lineNumber: 135,
+                                        lineNumber: 132,
                                         columnNumber: 13
                                     }, this),
                                     filteredUsers.map((u)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -1630,25 +1720,72 @@ function UserReportPage() {
                                             children: u
                                         }, u, false, {
                                             fileName: "[project]/src/app/user-report/page.tsx",
-                                            lineNumber: 137,
+                                            lineNumber: 134,
                                             columnNumber: 15
                                         }, this))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/user-report/page.tsx",
-                                lineNumber: 130,
+                                lineNumber: 127,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/user-report/page.tsx",
-                        lineNumber: 128,
+                        lineNumber: 125,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex flex-col",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                className: "mb-2 font-semibold",
+                                style: {
+                                    fontSize: "20px"
+                                },
+                                children: "表示モード："
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/user-report/page.tsx",
+                                lineNumber: 139,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
+                                value: viewMode,
+                                onChange: (e)=>setViewMode(e.target.value),
+                                className: "border px-3 py-2 rounded-md shadow-sm",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                        value: "activity",
+                                        children: "アクティビティ別"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/user-report/page.tsx",
+                                        lineNumber: 145,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                        value: "month",
+                                        children: "月別"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/user-report/page.tsx",
+                                        lineNumber: 146,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/user-report/page.tsx",
+                                lineNumber: 140,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/user-report/page.tsx",
+                        lineNumber: 138,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/user-report/page.tsx",
-                lineNumber: 98,
+                lineNumber: 105,
                 columnNumber: 7
             }, this),
             selectedEngagement && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1673,7 +1810,7 @@ function UserReportPage() {
                                         children: "ユーザー"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/user-report/page.tsx",
-                                        lineNumber: 148,
+                                        lineNumber: 156,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -1681,7 +1818,7 @@ function UserReportPage() {
                                         children: "Engagement"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/user-report/page.tsx",
-                                        lineNumber: 149,
+                                        lineNumber: 157,
                                         columnNumber: 17
                                     }, this),
                                     viewMode === "activity" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -1689,7 +1826,7 @@ function UserReportPage() {
                                         children: "Activity ID"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/user-report/page.tsx",
-                                        lineNumber: 150,
+                                        lineNumber: 158,
                                         columnNumber: 45
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -1697,7 +1834,7 @@ function UserReportPage() {
                                         children: viewMode === "month" ? "月" : "Activity"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/user-report/page.tsx",
-                                        lineNumber: 151,
+                                        lineNumber: 159,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -1709,18 +1846,18 @@ function UserReportPage() {
                                         children: "実績"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/user-report/page.tsx",
-                                        lineNumber: 152,
+                                        lineNumber: 160,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/user-report/page.tsx",
-                                lineNumber: 147,
+                                lineNumber: 155,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/user-report/page.tsx",
-                            lineNumber: 146,
+                            lineNumber: 154,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
@@ -1733,7 +1870,7 @@ function UserReportPage() {
                                                 children: row.userName
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/user-report/page.tsx",
-                                                lineNumber: 158,
+                                                lineNumber: 166,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1741,7 +1878,7 @@ function UserReportPage() {
                                                 children: row.engagement
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/user-report/page.tsx",
-                                                lineNumber: 159,
+                                                lineNumber: 167,
                                                 columnNumber: 19
                                             }, this),
                                             viewMode === "activity" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1749,7 +1886,7 @@ function UserReportPage() {
                                                 children: row.activityId
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/user-report/page.tsx",
-                                                lineNumber: 160,
+                                                lineNumber: 168,
                                                 columnNumber: 47
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1757,7 +1894,7 @@ function UserReportPage() {
                                                 children: viewMode === "month" ? row.month : row.activity
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/user-report/page.tsx",
-                                                lineNumber: 161,
+                                                lineNumber: 169,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1772,13 +1909,13 @@ function UserReportPage() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/user-report/page.tsx",
-                                                lineNumber: 162,
+                                                lineNumber: 170,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, idx, true, {
                                         fileName: "[project]/src/app/user-report/page.tsx",
-                                        lineNumber: 157,
+                                        lineNumber: 165,
                                         columnNumber: 17
                                     }, this)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1796,7 +1933,7 @@ function UserReportPage() {
                                             children: "合計"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/user-report/page.tsx",
-                                            lineNumber: 167,
+                                            lineNumber: 175,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1810,36 +1947,36 @@ function UserReportPage() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/user-report/page.tsx",
-                                            lineNumber: 168,
+                                            lineNumber: 176,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/user-report/page.tsx",
-                                    lineNumber: 166,
+                                    lineNumber: 174,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/user-report/page.tsx",
-                            lineNumber: 155,
+                            lineNumber: 163,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/user-report/page.tsx",
-                    lineNumber: 145,
+                    lineNumber: 153,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/user-report/page.tsx",
-                lineNumber: 144,
+                lineNumber: 152,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/user-report/page.tsx",
-        lineNumber: 95,
+        lineNumber: 102,
         columnNumber: 5
     }, this);
 }
@@ -1856,7 +1993,6 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 
 var { g: global, d: __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
-// src/app/user-monthly-dashboard/page.tsx
 __turbopack_context__.s({
     "default": (()=>UserMonthlyDashboard)
 });
@@ -1879,6 +2015,8 @@ function UserMonthlyDashboard() {
     _s();
     const [data, setData] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
     const [selectedUser, setSelectedUser] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const [startMonth, setStartMonth] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const [endMonth, setEndMonth] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "UserMonthlyDashboard.useEffect": ()=>{
             const fetchData = {
@@ -1894,7 +2032,14 @@ function UserMonthlyDashboard() {
         }
     }["UserMonthlyDashboard.useEffect"], []);
     const users = Array.from(new Set(data.map((d)=>d.userName)));
-    const filteredData = selectedUser ? data.filter((d)=>d.userName === selectedUser) : [];
+    const allMonths = Array.from(new Set(data.map((d)=>d.month))).sort((a, b)=>new Date(a).getTime() - new Date(b).getTime());
+    const filteredData = selectedUser ? data.filter((d)=>d.userName === selectedUser).filter((d)=>{
+        const time = new Date(d.month).getTime();
+        const from = startMonth ? new Date(startMonth).getTime() : -Infinity;
+        const to = endMonth ? new Date(endMonth).getTime() : Infinity;
+        return time >= from && time <= to;
+    }).sort((a, b)=>new Date(a.month).getTime() - new Date(b.month).getTime()) : [];
+    const totalHours = filteredData.reduce((sum, row)=>sum + row.totalHours, 0);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "p-6 space-y-8",
         children: [
@@ -1903,54 +2048,154 @@ function UserMonthlyDashboard() {
                 children: "📊 ユーザー別・月別ダッシュボード"
             }, void 0, false, {
                 fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
-                lineNumber: 39,
+                lineNumber: 53,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "mb-4",
+                className: "grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl",
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                        className: "mr-2 font-semibold",
-                        style: {
-                            fontSize: "20px"
-                        },
-                        children: "ユーザー選択："
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
-                        lineNumber: 42,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
-                        className: "border p-2 rounded",
-                        value: selectedUser,
-                        onChange: (e)=>setSelectedUser(e.target.value),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                value: "",
-                                children: "-- 選択してください --"
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                className: "font-semibold block mb-2",
+                                style: {
+                                    fontSize: "20px"
+                                },
+                                children: "ユーザー選択："
                             }, void 0, false, {
                                 fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
-                                lineNumber: 51,
+                                lineNumber: 58,
                                 columnNumber: 11
                             }, this),
-                            users.map((user)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                    value: user,
-                                    children: user
-                                }, user, false, {
-                                    fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
-                                    lineNumber: 53,
-                                    columnNumber: 13
-                                }, this))
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
+                                className: "border p-2 rounded w-full",
+                                value: selectedUser,
+                                onChange: (e)=>setSelectedUser(e.target.value),
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                        value: "",
+                                        children: "-- 選択してください --"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
+                                        lineNumber: 64,
+                                        columnNumber: 13
+                                    }, this),
+                                    users.map((user)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                            value: user,
+                                            children: user
+                                        }, user, false, {
+                                            fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
+                                            lineNumber: 66,
+                                            columnNumber: 15
+                                        }, this))
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
+                                lineNumber: 59,
+                                columnNumber: 11
+                            }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
-                        lineNumber: 46,
+                        lineNumber: 57,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                className: "font-semibold block mb-2",
+                                style: {
+                                    fontSize: "20px"
+                                },
+                                children: "開始月："
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
+                                lineNumber: 72,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
+                                className: "border p-2 rounded w-full",
+                                value: startMonth,
+                                onChange: (e)=>setStartMonth(e.target.value),
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                        value: "",
+                                        children: "-- 指定なし --"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
+                                        lineNumber: 78,
+                                        columnNumber: 13
+                                    }, this),
+                                    allMonths.map((month)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                            value: month,
+                                            children: month
+                                        }, month, false, {
+                                            fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
+                                            lineNumber: 80,
+                                            columnNumber: 15
+                                        }, this))
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
+                                lineNumber: 73,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
+                        lineNumber: 71,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                className: "font-semibold block mb-2",
+                                style: {
+                                    fontSize: "20px"
+                                },
+                                children: "終了月："
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
+                                lineNumber: 86,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
+                                className: "border p-2 rounded w-full",
+                                value: endMonth,
+                                onChange: (e)=>setEndMonth(e.target.value),
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                        value: "",
+                                        children: "-- 指定なし --"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
+                                        lineNumber: 92,
+                                        columnNumber: 13
+                                    }, this),
+                                    allMonths.map((month)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                            value: month,
+                                            children: month
+                                        }, month, false, {
+                                            fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
+                                            lineNumber: 94,
+                                            columnNumber: 15
+                                        }, this))
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
+                                lineNumber: 87,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
+                        lineNumber: 85,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
-                lineNumber: 41,
+                lineNumber: 56,
                 columnNumber: 7
             }, this),
             selectedUser && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -1975,29 +2220,29 @@ function UserMonthlyDashboard() {
                                         strokeDasharray: "3 3"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
-                                        lineNumber: 67,
+                                        lineNumber: 109,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$XAxis$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["XAxis"], {
                                         dataKey: "month"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
-                                        lineNumber: 68,
+                                        lineNumber: 110,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$YAxis$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["YAxis"], {}, void 0, false, {
                                         fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
-                                        lineNumber: 69,
+                                        lineNumber: 111,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$component$2f$Tooltip$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Tooltip"], {}, void 0, false, {
                                         fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
-                                        lineNumber: 70,
+                                        lineNumber: 112,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$component$2f$Legend$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Legend"], {}, void 0, false, {
                                         fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
-                                        lineNumber: 71,
+                                        lineNumber: 113,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$Bar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Bar"], {
@@ -2006,27 +2251,27 @@ function UserMonthlyDashboard() {
                                         name: "実績時間 (h)"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
-                                        lineNumber: 72,
+                                        lineNumber: 114,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
-                                lineNumber: 63,
+                                lineNumber: 105,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
-                            lineNumber: 62,
+                            lineNumber: 104,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
-                        lineNumber: 61,
+                        lineNumber: 103,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "overflow-x-auto",
+                        className: "overflow-x-auto mt-4",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("table", {
                             className: "min-w-full border text-sm",
                             children: [
@@ -2035,115 +2280,139 @@ function UserMonthlyDashboard() {
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
-                                                className: "border px-4 py-2",
-                                                style: {
-                                                    width: "120px",
-                                                    textAlign: "right"
-                                                },
+                                                className: "border px-6 py-2 text-center",
                                                 children: "ユーザー"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
-                                                lineNumber: 82,
+                                                lineNumber: 124,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
-                                                className: "border px-4 py-2",
+                                                className: "border px-6 py-2 ",
                                                 style: {
-                                                    width: "120px",
                                                     textAlign: "right"
                                                 },
-                                                children: "月"
+                                                children: "対象月"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
-                                                lineNumber: 83,
+                                                lineNumber: 125,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
-                                                className: "border px-4 py-2",
+                                                className: "border px-6 py-2 ",
                                                 style: {
-                                                    width: "120px",
                                                     textAlign: "right"
                                                 },
                                                 children: "実績時間"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
-                                                lineNumber: 84,
+                                                lineNumber: 126,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
-                                        lineNumber: 81,
+                                        lineNumber: 123,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
-                                    lineNumber: 80,
+                                    lineNumber: 122,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
-                                    children: filteredData.map((row, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
-                                            className: "text-center",
+                                    children: [
+                                        filteredData.map((row, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
+                                                className: "text-center",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                        className: "border px-6 py-2",
+                                                        children: row.userName
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
+                                                        lineNumber: 132,
+                                                        columnNumber: 21
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                        className: "border px-6 py-2",
+                                                        style: {
+                                                            textAlign: "right",
+                                                            width: "120px"
+                                                        },
+                                                        children: row.month
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
+                                                        lineNumber: 133,
+                                                        columnNumber: 21
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                        className: "border px-6 py-2",
+                                                        style: {
+                                                            textAlign: "right",
+                                                            width: "120px"
+                                                        },
+                                                        children: [
+                                                            row.totalHours.toFixed(1),
+                                                            " h"
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
+                                                        lineNumber: 134,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                ]
+                                            }, idx, true, {
+                                                fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
+                                                lineNumber: 131,
+                                                columnNumber: 19
+                                            }, this)),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
+                                            className: "bg-blue-100 font-bold text-right",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
-                                                    className: "border px-4 py-2",
-                                                    style: {
-                                                        width: "120px",
-                                                        textAlign: "right"
-                                                    },
-                                                    children: row.userName
+                                                    className: "border px-6 py-2 text-center",
+                                                    colSpan: 2,
+                                                    children: "合計"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
-                                                    lineNumber: 90,
-                                                    columnNumber: 21
+                                                    lineNumber: 140,
+                                                    columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
-                                                    className: "border px-4 py-2",
+                                                    className: "border px-6 py-2",
                                                     style: {
-                                                        width: "120px",
-                                                        textAlign: "right"
-                                                    },
-                                                    children: row.month
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
-                                                    lineNumber: 91,
-                                                    columnNumber: 21
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
-                                                    className: "border px-4 py-2",
-                                                    style: {
-                                                        width: "120px",
                                                         textAlign: "right"
                                                     },
                                                     children: [
-                                                        row.totalHours.toFixed(1),
+                                                        totalHours.toFixed(1),
                                                         " h"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
-                                                    lineNumber: 92,
-                                                    columnNumber: 21
+                                                    lineNumber: 141,
+                                                    columnNumber: 19
                                                 }, this)
                                             ]
-                                        }, idx, true, {
+                                        }, void 0, true, {
                                             fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
-                                            lineNumber: 89,
-                                            columnNumber: 19
-                                        }, this))
-                                }, void 0, false, {
+                                            lineNumber: 139,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
                                     fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
-                                    lineNumber: 87,
+                                    lineNumber: 129,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
-                            lineNumber: 79,
+                            lineNumber: 121,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
-                        lineNumber: 78,
+                        lineNumber: 120,
                         columnNumber: 11
                     }, this)
                 ]
@@ -2151,11 +2420,11 @@ function UserMonthlyDashboard() {
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/user-monthly-dashboard/page.tsx",
-        lineNumber: 38,
+        lineNumber: 52,
         columnNumber: 5
     }, this);
 }
-_s(UserMonthlyDashboard, "jBwGTUkmeb1+J6JaJkoBIaWDFfA=");
+_s(UserMonthlyDashboard, "p/mw4nwR9QlmXO+zAW6O+euO0Tk=");
 _c = UserMonthlyDashboard;
 var _c;
 __turbopack_context__.k.register(_c, "UserMonthlyDashboard");

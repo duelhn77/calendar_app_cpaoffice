@@ -1,14 +1,13 @@
 {
   "/page": "app/page.js",
   "/login/page": "app/login/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/api/authenticateUser/route": "app/api/authenticateUser/route.js",
   "/calendar/page": "app/calendar/page.js",
   "/api/fetchEngagements/route": "app/api/fetchEngagements/route.js",
   "/api/getUserPermissions/route": "app/api/getUserPermissions/route.js",
-  "/api/fetchLocations/route": "app/api/fetchLocations/route.js",
-  "/api/fetchActivities/route": "app/api/fetchActivities/route.js",
   "/api/getEvents/route": "app/api/getEvents/route.js",
-  "/api/saveEvent/route": "app/api/saveEvent/route.js",
-  "/api/fetchBudgetAndActuals/route": "app/api/fetchBudgetAndActuals/route.js"
+  "/api/userMonthlySummary/route": "app/api/userMonthlySummary/route.js",
+  "/api/fetchBudgetAndActuals/route": "app/api/fetchBudgetAndActuals/route.js",
+  "/api/fetchActivities/route": "app/api/fetchActivities/route.js",
+  "/api/fetchUserBudgetActuals/route": "app/api/fetchUserBudgetActuals/route.js"
 }

@@ -66,28 +66,35 @@ export default function UserReportPage() {
     : [];
 
   const groupedData = viewMode === "month"
-    ? Object.values(
-        filteredData.reduce((acc, row) => {
-          const key = `${row.userName}_${row.engagement}_${row.month}`;
-          if (!acc[key]) {
-            acc[key] = { ...row, activity: row.month || "", budget: 0, actual: 0 };
-          }
-          acc[key].budget += row.budget;
-          acc[key].actual += row.actual;
-          return acc;
-        }, {} as { [key: string]: ReportRow })
-      )
-    : Object.values(
-        filteredData.reduce((acc, row) => {
-          const key = `${row.userName}_${row.engagement}_${row.activityId}_${row.activity}`;
-          if (!acc[key]) {
-            acc[key] = { ...row, budget: 0, actual: 0 };
-          }
-          acc[key].budget += row.budget;
-          acc[key].actual += row.actual;
-          return acc;
-        }, {} as { [key: string]: ReportRow })
-      ).sort((a, b) => (a.activityId || "").localeCompare(b.activityId || "", "ja", { numeric: true }));
+  ? Object.values(
+      filteredData.reduce((acc, row) => {
+        const key = `${row.userName}_${row.engagement}_${row.month}`;
+        if (!acc[key]) {
+          acc[key] = { ...row, activity: row.month || "", budget: 0, actual: 0 };
+        }
+        acc[key].budget += row.budget;
+        acc[key].actual += row.actual;
+        return acc;
+      }, {} as { [key: string]: ReportRow })
+    ).sort((a, b) => {
+      const dateA = new Date(a.month || "1900-01");
+      const dateB = new Date(b.month || "1900-01");
+      return dateA.getTime() - dateB.getTime();
+    })
+  : Object.values(
+      filteredData.reduce((acc, row) => {
+        const key = `${row.userName}_${row.engagement}_${row.activityId}_${row.activity}`;
+        if (!acc[key]) {
+          acc[key] = { ...row, budget: 0, actual: 0 };
+        }
+        acc[key].budget += row.budget;
+        acc[key].actual += row.actual;
+        return acc;
+      }, {} as { [key: string]: ReportRow })
+    ).sort((a, b) =>
+      (a.activityId || "").localeCompare(b.activityId || "", "ja", { numeric: true })
+    );
+
 
   const totalActual = groupedData.reduce((sum, row) => sum + row.actual, 0);
 
@@ -96,17 +103,7 @@ export default function UserReportPage() {
       <h1 className="text-2xl font-bold mb-8">👤 ユーザー別実績レポート</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 max-w-4xl">
-        <div className="flex flex-col">
-          <label className="mb-2 font-semibold" style={{ fontSize: "20px" }}>表示モード：</label>
-          <select
-            value={viewMode}
-            onChange={(e) => setViewMode(e.target.value as "activity" | "month")}
-            className="border px-3 py-2 rounded-md shadow-sm"
-          >
-            <option value="activity">アクティビティ別</option>
-            <option value="month">月別</option>
-          </select>
-        </div>
+        
 
         <div className="flex flex-col">
           <label className="mb-2 font-semibold" style={{ fontSize: "20px" }}>Engagement（会社）を選択：</label>
@@ -136,6 +133,17 @@ export default function UserReportPage() {
             {filteredUsers.map((u) => (
               <option key={u} value={u}>{u}</option>
             ))}
+          </select>
+        </div>
+        <div className="flex flex-col">
+          <label className="mb-2 font-semibold" style={{ fontSize: "20px" }}>表示モード：</label>
+          <select
+            value={viewMode}
+            onChange={(e) => setViewMode(e.target.value as "activity" | "month")}
+            className="border px-3 py-2 rounded-md shadow-sm"
+          >
+            <option value="activity">アクティビティ別</option>
+            <option value="month">月別</option>
           </select>
         </div>
       </div>

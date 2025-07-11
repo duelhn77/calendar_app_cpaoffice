@@ -26,7 +26,7 @@ export async function GET() {
 
     const sheets = google.sheets({ version: "v4", auth });
 
-    const range = "Activities!A:C"; // A列 (Engagement) - C列 (Activity)
+    const range = "Activities!A:D"; // A列 (Engagement) - C列 (Activity)
 
     const response = await sheets.spreadsheets.values.get({
       spreadsheetId: SHEET_ID,
@@ -44,6 +44,7 @@ export async function GET() {
       engagement: row[0] || "", // A列
       activity_id: row[1] || "", // B列 (ID)
       activity: row[2] || "", // C列 (Activity 名)
+      budget: parseFloat(row[3] || "0") || 0,// ← D列から取得（予定時間）
     }));
 
     console.log("✅ 取得したアクティビティ:", activities);
