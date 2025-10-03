@@ -131,14 +131,14 @@ export default function UserMonthlyDashboard() {
                   <tr key={idx} className="text-center">
                     <td className="border px-6 py-2">{row.userName}</td>
                     <td className="border px-6 py-2"style={{ textAlign: "right", width: "120px" }}>{row.month}</td>
-                    <td className="border px-6 py-2" style={{ textAlign: "right", width: "120px" }}>{row.totalHours.toFixed(1)} h</td>
+                    <td className="border px-6 py-2" style={{ textAlign: "right", width: "120px" }}>{row.totalHours.toFixed(2)} h</td>
                   </tr>
                 ))}
 
                 {/* ✅ 合計行 */}
                 <tr className="bg-blue-100 font-bold text-right">
                   <td className="border px-6 py-2 text-center" colSpan={2}>合計</td>
-                  <td className="border px-6 py-2" style={{ textAlign: "right" }}>{totalHours.toFixed(1)} h</td>
+                  <td className="border px-6 py-2" style={{ textAlign: "right" }}>{totalHours.toFixed(2)} h</td>
                 </tr>
               </tbody>
             </table>

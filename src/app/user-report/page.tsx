@@ -167,13 +167,13 @@ export default function UserReportPage() {
                   <td className="border px-6 py-2">{row.engagement}</td>
                   {viewMode === "activity" && <td className="border px-6 py-2">{row.activityId}</td>}
                   <td className="border px-6 py-2">{viewMode === "month" ? row.month : row.activity}</td>
-                  <td className="border px-6 py-2" style={{ width: "120px", textAlign: "right" }}>{row.actual.toFixed(1)}h</td>
+                  <td className="border px-6 py-2" style={{ width: "120px", textAlign: "right" }}>{row.actual.toFixed(2)}h</td>
                 </tr>
               ))}
 
               <tr className="font-bold bg-gray-50" style={{ borderTop: "2px solid black", borderBottom: "2px solid black", fontWeight: "bold", backgroundColor: "#aed4f6" }}>
                 <td className="border px-6 py-2 text-center" colSpan={viewMode === "month" ? 3 : 4}>合計</td>
-                <td className="border px-6 py-2" style={{ textAlign: "right" }}>{totalActual.toFixed(1)}h</td>
+                <td className="border px-6 py-2" style={{ textAlign: "right" }}>{totalActual.toFixed(2)}h</td>
               </tr>
             </tbody>
           </table>

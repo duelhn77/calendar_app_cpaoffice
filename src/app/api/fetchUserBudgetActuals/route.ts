@@ -45,15 +45,22 @@ export async function GET() {
     // ActivitiesシートからActivity IDと予定時間を取得
     const actRes = await sheets.spreadsheets.values.get({
       spreadsheetId: SHEET_ID,
-      range: "Activities!A:D", // A:Engagement, B:Activity_id, C:Activity, D:予定時間
+      range: "Activities!A:D", // A:Engagement, B:Activity_id, C:Activity, D:予定時間(時間)
     });
     const activityRows = actRes.data.values || [];
 
+    const toNumber = (v: unknown, fb = 0) => {
+      const n = typeof v === "string" ? Number(v) : (typeof v === "number" ? v : NaN);
+      return Number.isFinite(n) ? n : fb;
+    };
+
     const getActivityMeta = (eng: string, act: string) => {
       const match = activityRows.find(r => r[0] === eng && r[2] === act);
+      const budgetHours = toNumber(match?.[3], 0);
       return {
         id: match?.[1] || "",
-        budget: parseFloat(match?.[3] || "0") || 0,
+        budgetHours,
+        budgetCenti: Math.round(budgetHours * 100), // 予定：時間×100 の整数
       };
     };
 
@@ -63,23 +70,31 @@ export async function GET() {
       const startDate = new Date(startRaw);
       const endDate = new Date(endRaw);
 
-      const diffInMinutes = (endDate.getTime() - startDate.getTime()) / (1000 * 60);
-      const actual = Math.round((diffInMinutes / 60) * 10) / 10;
+      // ★ここが肝：まず分の整数にする（秒以下の端数も吸収）
+      const minutes = Math.max(0, Math.round((endDate.getTime() - startDate.getTime()) / 60000));
+
       const month = !isNaN(startDate.getTime()) ? startDate.toISOString().slice(0, 7) : "";
 
       const engagement = row[engagementIdx];
       const activity = row[activityIdx];
       const meta = getActivityMeta(engagement, activity);
 
+      // 表示互換用の派生値
+      const actualCenti = Math.round((minutes * 100) / 60); // 時間×100 の整数（2桁相当）
+      const actual = actualCenti / 100;                     // 小数時間（0.01h精度）
+
       return {
         userId: row[userIdIdx],
         userName: row[userNameIdx],
         engagement,
         activity,
-        budget: meta.budget,
-        actual,
-        month,
+        month,                         // "YYYY-MM"
         activityId: meta.id,
+        budget: meta.budgetHours,      // 互換
+        budgetCenti: meta.budgetCenti, // 推奨
+        actual,                        // 互換（0.01h生成）
+        actualCenti,                   // 推奨：整数（時間×100）
+        actualMinutes: minutes,        // 推奨：分（整数）
       };
     });
 

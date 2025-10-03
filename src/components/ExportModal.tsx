@@ -4,34 +4,32 @@ import Select from "react-select";
 interface ExportModalProps {
   isOpen: boolean;
   onClose: () => void;
-  onExport: (startDate: string, endDate: string, format: string) => Promise<boolean>; // 修正箇所: `Promise<boolean>` を返す
+  onExport: (startDate: string, endDate: string, format: string) => Promise<boolean>;
 }
 
 const ExportModal: React.FC<ExportModalProps> = ({ isOpen, onClose, onExport }) => {
   const [startDate, setStartDate] = useState("");
   const [endDate, setEndDate] = useState("");
-  const [format, setFormat] = useState("xlsx");
-  const [errorMessage, setErrorMessage] = useState(""); // 修正箇所: エラーメッセージ用の state
+  // ▼ ここを xlsx -> csv に変更
+  const [format, setFormat] = useState("csv");
+  const [errorMessage, setErrorMessage] = useState("");
 
   if (!isOpen) return null;
 
   const handleExport = async () => {
-    setErrorMessage(""); // 修正箇所: エラーメッセージをリセット
-
-    const success = await onExport(startDate, endDate, format); // 修正箇所: `onExport` の結果を取得
+    setErrorMessage("");
+    const success = await onExport(startDate, endDate, format);
     if (success) {
-      onClose(); // 修正箇所: エクスポート成功時にモーダルを閉じる
+      onClose();
     } else {
-      setErrorMessage("対象期間に該当データはありません"); // 修正箇所: エラー時にメッセージを表示
+      setErrorMessage("対象期間に該当データはありません");
     }
   };
 
   return (
     <>
-      {/* ✅ オーバーレイを適用 */}
       <div className="export-modal-overlay" onClick={onClose}></div>
 
-      {/* ✅ モーダル本体 */}
       <div className="export-modal" onClick={(e) => e.stopPropagation()}>
         <h2>📥 データをエクスポート</h2>
 
@@ -42,16 +40,14 @@ const ExportModal: React.FC<ExportModalProps> = ({ isOpen, onClose, onExport }) 
         <input type="date" value={endDate} onChange={(e) => setEndDate(e.target.value)} />
 
         <label>ファイル形式</label>
+        {/* ▼ Excel を除外し、CSV のみ表示 */}
         <Select
-          options={[
-            { value: "xlsx", label: "Excel (.xlsx)" },
-            { value: "csv", label: "CSV (.csv)" }
-          ]}
-          value={{ value: format, label: format === "xlsx" ? "Excel (.xlsx)" : "CSV (.csv)" }}
-          onChange={(selectedOption) => setFormat(selectedOption?.value || "xlsx")} // 修正箇所: 選択されたフォーマットを反映
+          options={[{ value: "csv", label: "CSV (.csv)" }]}
+          value={{ value: "csv", label: "CSV (.csv)" }}
+          onChange={() => setFormat("csv")}
+          isDisabled
         />
 
-        {/* 修正箇所: エラーメッセージを赤字で表示 */}
         {errorMessage && <p style={{ color: "red" }}>{errorMessage}</p>}
 
         <div className="export-modal-buttons">
